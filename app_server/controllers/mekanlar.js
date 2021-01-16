@@ -4,6 +4,8 @@ var apiSecenekleri = {
   apiYolu: '/api/mekanlar/'
 }
 var istekSecenekleri
+var istekSecenekleri
+var istekSecenekleri
 var mesafeyiFormatla = function (mesafe) {
   var yeniMesafe, birim;
   if (mesafe > 1000) {
@@ -16,7 +18,7 @@ var mesafeyiFormatla = function (mesafe) {
   }
   return yeniMesafe + birim;
 }
-var footer = "Anıl Er 2020"
+var footer = "Samed Kerem Tiğre"
 var anaSayfaOlustur = function (req, res, cevap, mekanListesi) {
   var mesaj;
   if (!(mekanListesi instanceof Array)) {
