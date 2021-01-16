@@ -8,15 +8,16 @@ var saatSema=new mongoose.Schema(
     },
 {usePushEach: true}
     );
-var yorumSema=new mongoose.Schema(
-    {
-        yorumYapan:{type:String},
-        puan:{type:Number,required:true,min:0,max:5},
-        yorumMetni:{type:String,required:true},
-        tarih:{type:Date,default:Date.now}
-    },
-{usePushEach: true}
+    var yorumSema = new mongoose.Schema(
+        {
+            yorumYapan: { type: String, required: true },
+            puan: { type: Number, min: 0, max: 5, required: true },
+            yorumMetni: { type: String, required: true },
+            tarih: { type: Date, default: Date.now },
+        },
+        { usePushEach: true }
     );
+
 
 var mekanSema=new mongoose.Schema(
     {
