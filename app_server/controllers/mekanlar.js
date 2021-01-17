@@ -4,8 +4,6 @@ var apiSecenekleri = {
   apiYolu: '/api/mekanlar/'
 }
 var istekSecenekleri
-var istekSecenekleri
-var istekSecenekleri
 var mesafeyiFormatla = function (mesafe) {
   var yeniMesafe, birim;
   if (mesafe > 1000) {
